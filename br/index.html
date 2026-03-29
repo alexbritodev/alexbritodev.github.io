@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Brito | Desenvolvedor Web, Professor, Palestrante e Consultor</title>
+    <meta name="description" content="Alex Brito é um Desenvolvedor Web brasileiro, Professor de Filosofia e Tecnologia, Palestrante e Consultor focado em soluções digitais lógicas, de alta performance e bem estruturadas.">
+    <meta name="author" content="Alex Brito">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+
+    <link rel="canonical" href="https://alexhpbrito.com.br/br/">
+    <link rel="alternate" href="https://alexhpbrito.com.br/" hreflang="en">
+    <link rel="alternate" href="https://alexhpbrito.com.br/br/" hreflang="pt-BR">
+    <link rel="alternate" href="https://alexhpbrito.com.br/" hreflang="x-default">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Alex Brito">
+    <meta property="og:title" content="Alex Brito | Desenvolvedor Web, Professor, Palestrante e Consultor">
+    <meta property="og:description" content="Alex Brito é um Desenvolvedor Web brasileiro, Professor de Filosofia e Tecnologia, Palestrante e Consultor focado em soluções digitais lógicas, de alta performance e bem estruturadas.">
+    <meta property="og:url" content="https://alexhpbrito.com.br/br/">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://alexhpbrito.com.br/assets/img/logo-alex-brito.png">
+    <meta property="og:image:secure_url" content="https://alexhpbrito.com.br/assets/img/logo-alex-brito.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Alex Brito brand logo">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alex Brito | Desenvolvedor Web, Professor, Palestrante e Consultor">
+    <meta name="twitter:description" content="Alex Brito é um Desenvolvedor Web brasileiro, Professor de Filosofia e Tecnologia, Palestrante e Consultor focado em soluções digitais lógicas, de alta performance e bem estruturadas.">
+    <meta name="twitter:image" content="https://alexhpbrito.com.br/assets/img/logo-alex-brito.png">
+    <meta name="twitter:image:alt" content="Alex Brito brand logo">
+
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon-alex-brito.svg">
+    <link rel="alternate icon" type="image/png" href="../assets/img/favicon-alex-brito.png">
+    <link rel="apple-touch-icon" href="../assets/img/favicon-alex-brito.png">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Alex Brito",
+            "url": "https://alexhpbrito.com.br/br/",
+            "image": "https://alexhpbrito.com.br/assets/img/logo-alex-brito.png",
+            "email": "mailto:contato@alexhpbrito.com.br",
+            "jobTitle": "Desenvolvedor Web, Professor, Palestrante e Consultor",
+            "description": "Alex Brito é um Desenvolvedor Web brasileiro, Professor de Filosofia e Tecnologia, Palestrante e Consultor focado em soluções digitais lógicas, de alta performance e bem estruturadas."
+        }
+    </script>
+    
+    <!-- Google Fonts: Playfair Display (Headings) & Lato (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00296B',
+                        neutral: '#333333',
+                        gold: '#D4AF37',
+                        white: '#FFFFFF',
+                        offwhite: '#FAFAFA'
+                    },
+                    fontFamily: {
+                        heading: ['"Playfair Display"', 'serif'],
+                        body: ['Lato', 'sans-serif'],
+                    },
+                    transitionProperty: {
+                        'height': 'height',
+                        'spacing': 'margin, padding',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Minimal CSS for adjustments not covered by Tailwind -->
+    <style>
+        :root {
+            --header-height: 5rem;
+            --primary: #00296B;
+            --primary-deep: #00153D;
+            --gold: #D4AF37;
+            --ink: #1F2937;
+            --paper: #F6F8FB;
+        }
+
+        section[id] {
+            scroll-margin-top: calc(var(--header-height) + 1rem);
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at 10% -10%, rgba(212, 175, 55, 0.1), transparent 45%),
+                radial-gradient(circle at 90% 0, rgba(0, 41, 107, 0.08), transparent 42%),
+                #FFFFFF;
+        }
+
+        h1, h2, h3, h4, h5, h6, .font-heading { font-family: 'Playfair Display', serif; }
+
+        .site-header {
+            background: rgba(255, 255, 255, 0.9);
+            border-color: rgba(203, 213, 225, 0.7);
+            box-shadow: 0 10px 28px rgba(0, 18, 51, 0.09);
+        }
+
+        .site-header > div {
+            height: var(--header-height) !important;
+            min-height: var(--header-height);
+        }
+
+        .nav-link {
+            position: relative;
+            letter-spacing: 0.03em;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -0.45rem;
+            width: 100%;
+            height: 2px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 220ms ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link:focus-visible::after {
+            transform: scaleX(1);
+        }
+
+        .lang-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.7rem;
+            height: 2rem;
+            border: 1px solid #D8E2F0;
+            border-radius: 0.72rem;
+            background: #FFFFFF;
+            transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, opacity 220ms ease;
+            opacity: 0.92;
+        }
+
+        .lang-btn:hover,
+        .lang-btn:focus-visible {
+            transform: translateY(-1px);
+            opacity: 1;
+            border-color: #AFC0E3;
+            box-shadow: 0 8px 14px rgba(0, 41, 107, 0.11);
+        }
+
+        .lang-btn.is-active {
+            opacity: 1;
+            border-color: #5D7FB8;
+            box-shadow: 0 0 0 2px rgba(0, 41, 107, 0.14), 0 10px 18px rgba(0, 41, 107, 0.12);
+        }
+
+        .lang-flag {
+            width: 2rem;
+            aspect-ratio: 5 / 3;
+            height: auto;
+            border-radius: 0.38rem;
+            object-fit: contain;
+            border: 1px solid rgba(15, 23, 42, 0.16);
+            display: block;
+        }
+
+        .menu-toggle {
+            width: 2.7rem;
+            height: 2.7rem;
+            border: 1px solid #D7E0EE;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: #FFFFFF;
+            box-shadow: 0 8px 16px rgba(0, 41, 107, 0.08);
+            transition: border-color 220ms ease, box-shadow 220ms ease;
+        }
+
+        .menu-toggle:hover {
+            border-color: #AFC0E3;
+            box-shadow: 0 10px 18px rgba(0, 41, 107, 0.14);
+        }
+
+        .mobile-close-btn {
+            width: 2.4rem;
+            height: 2.4rem;
+            box-shadow: 0 8px 16px rgba(0, 41, 107, 0.12);
+        }
+
+        .menu-icon {
+            position: absolute;
+            width: 1.18rem;
+            height: 1.18rem;
+            color: var(--primary);
+            transition: transform 260ms ease, opacity 180ms ease;
+        }
+
+        .menu-icon.menu-icon-open { opacity: 1; transform: rotate(0deg) scale(1); }
+        .menu-icon.menu-icon-close { opacity: 0; transform: rotate(-90deg) scale(0.8); }
+
+        .menu-toggle.is-open .menu-icon.menu-icon-open { opacity: 0; transform: rotate(90deg) scale(0.8); }
+        .menu-toggle.is-open .menu-icon.menu-icon-close { opacity: 1; transform: rotate(0deg) scale(1); }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            min-height: 100dvh;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 220ms ease;
+            z-index: 60;
+            isolation: isolate;
+        }
+
+        .mobile-menu.is-open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .mobile-menu-overlay {
+            position: absolute;
+            inset: 0;
+            background: #FFFFFF;
+            border: 0;
+            padding: 0;
+            opacity: 0;
+            transition: opacity 260ms ease;
+        }
+
+        .mobile-menu-panel {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: min(84vw, 360px);
+            height: 100dvh;
+            background: #FFFFFF !important;
+            opacity: 1;
+            border-left: 1px solid #D8E1EE;
+            box-shadow: -16px 0 36px rgba(0, 16, 43, 0.22);
+            -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+            transform: translateX(104%);
+            transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+            overflow-y: auto;
+        }
+
+        .mobile-flyout-logo {
+            height: 2.2rem;
+            width: auto;
+        }
+
+        .mobile-menu.is-open .mobile-menu-overlay { opacity: 1; }
+        .mobile-menu.is-open .mobile-menu-panel { transform: translateX(0); }
+
+        body.menu-open .site-header {
+            background: #FFFFFF;
+            -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+        }
+
+        .hero-surface {
+            background: linear-gradient(135deg, #FFFFFF 0%, #F5F8FF 45%, #EEF2FA 100%);
+            min-height: calc(100svh - var(--header-height));
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-orb {
+            position: absolute;
+            border-radius: 999px;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .hero-orb-one {
+            width: 21rem;
+            height: 21rem;
+            top: -7rem;
+            left: -4rem;
+            background: rgba(212, 175, 55, 0.24);
+        }
+
+        .hero-orb-two {
+            width: 24rem;
+            height: 24rem;
+            right: -7rem;
+            bottom: -10rem;
+            background: rgba(0, 41, 107, 0.2);
+        }
+
+        .btn-main {
+            border-radius: 999px;
+            box-shadow: 0 14px 28px rgba(0, 41, 107, 0.22);
+        }
+
+        .btn-outline {
+            border-radius: 999px;
+        }
+
+        .hero-btn-icon {
+            width: 1.18rem;
+            height: 1.18rem;
+            flex-shrink: 0;
+            stroke-width: 2.2;
+        }
+
+        .hero-copy {
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: clamp(2.25rem, 4.9vw, 4.6rem);
+            line-height: 1.06;
+            letter-spacing: -0.018em;
+            max-width: 22ch;
+            margin-inline: auto;
+        }
+
+        .hero-support {
+            max-width: 58ch;
+            margin-inline: auto;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .social-link {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 999px;
+            border: 1px solid #D6E0EF;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            background: #FFFFFF;
+            transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease;
+        }
+
+        .social-link:hover,
+        .social-link:focus-visible {
+            transform: translateY(-2px);
+            border-color: #9CB4DB;
+            box-shadow: 0 9px 16px rgba(0, 41, 107, 0.12);
+            background: #F7FAFF;
+        }
+
+        .social-link i {
+            width: 1.1rem;
+            height: 1.1rem;
+            stroke-width: 2.2;
+        }
+
+        .list-icon {
+            width: 1rem;
+            height: 1rem;
+            color: var(--gold);
+            flex-shrink: 0;
+            stroke-width: 2.2;
+        }
+
+        .about-photo-wrap {
+            border-radius: 1.3rem;
+            background: linear-gradient(145deg, #FFFFFF 0%, #ECF2FB 100%);
+            padding: 0.75rem;
+            border: 1px solid #DFE7F3;
+            box-shadow: 0 14px 30px rgba(0, 41, 107, 0.12);
+        }
+
+        .about-photo {
+            width: 100%;
+            border-radius: 0.9rem;
+            object-fit: cover;
+            border: 1px solid #E5EAF3;
+        }
+
+        .premium-card {
+            background: linear-gradient(180deg, #FFFFFF 0%, #FAFCFF 100%);
+            border: 1px solid #E6ECF5;
+            box-shadow: 0 12px 22px rgba(15, 23, 42, 0.06);
+            transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+        }
+
+        .service-stack {
+            border-top: 1px solid #DDE6F3;
+        }
+
+        .service-item {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid #DDE6F3;
+        }
+
+        .service-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .service-aside {
+            background: linear-gradient(165deg, #FFFFFF 0%, #F2F6FD 100%);
+            border: 1px solid #DFE7F4;
+            border-radius: 1.1rem;
+            padding: 1.4rem;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-5px);
+            border-color: #D1DDF0;
+            box-shadow: 0 20px 34px rgba(0, 41, 107, 0.11);
+        }
+
+        .section-soft {
+            background: linear-gradient(180deg, #F8FAFD 0%, #F2F6FB 100%);
+        }
+
+        .cta-card {
+            background: linear-gradient(155deg, #FFFFFF 0%, #F5F8FF 58%, #EEF3FC 100%);
+            border: 1px solid #E3EAF6;
+            border-radius: 1.5rem;
+            box-shadow: 0 18px 35px rgba(0, 41, 107, 0.11);
+        }
+
+        /* Subtle fade-in animation for initial load */
+        .fade-in { animation: fadeIn 0.8s ease-in forwards; opacity: 0; }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Focus outline for accessibility */
+        *:focus-visible {
+            outline: 2px solid var(--gold);
+            outline-offset: 2px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .hero-title {
+                font-size: clamp(2.8rem, 6vw, 3.35rem);
+                line-height: 1.12 !important;
+            }
+
+            .hero-surface .max-w-5xl {
+                max-width: 53rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-copy {
+                text-align: left;
+            }
+
+            .hero-title,
+            .hero-support {
+                margin-inline: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            :root {
+                --header-height: 4.6rem;
+            }
+
+            .site-header > div {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .site-header img {
+                height: 2.25rem !important;
+            }
+
+            .mobile-menu-panel {
+                width: min(86vw, 360px);
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+            }
+
+            .hero-surface {
+                padding-top: calc(var(--header-height) + 2rem) !important;
+                padding-bottom: 4.5rem !important;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .hero-title {
+                font-size: clamp(2rem, 9.2vw, 2.45rem) !important;
+                line-height: 1.12 !important;
+                margin-bottom: 1.15rem !important;
+            }
+
+            .hero-support {
+                font-size: 1.02rem !important;
+                line-height: 1.65 !important;
+                margin-bottom: 2rem !important;
+            }
+
+            .hero-surface p[data-i18n="hero_eyebrow"] {
+                letter-spacing: 0.12em !important;
+                margin-bottom: 1rem !important;
+            }
+
+            #about,
+            #expertise,
+            #approach,
+            #contact {
+                padding-top: 4.75rem !important;
+                padding-bottom: 4.75rem !important;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .about-photo-wrap {
+                max-width: 290px;
+                margin-inline: auto;
+            }
+
+            .premium-card {
+                padding: 1.55rem !important;
+            }
+
+            .cta-card {
+                border-radius: 1.2rem;
+                padding: 2rem 1.2rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen selection:bg-gold selection:text-primary">
+
+    <!-- Header & Navigation -->
+    <header class="site-header fixed w-full z-50 backdrop-blur-md border-b transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
+            <!-- Logo / Name -->
+            <a href="#home" class="inline-flex items-center" aria-label="Alex Brito Home">
+                <img src="../assets/img/logo-alex-brito.svg" alt="Alex Brito" class="h-10 md:h-11 w-auto">
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-neutral">
+                <a href="#home" class="nav-link hover:text-primary transition-colors" data-i18n="nav_home">Início</a>
+                <a href="#about" class="nav-link hover:text-primary transition-colors" data-i18n="nav_about">Sobre</a>
+                <a href="#expertise" class="nav-link hover:text-primary transition-colors" data-i18n="nav_expertise">Especialidades</a>
+                <a href="#approach" class="nav-link hover:text-primary transition-colors" data-i18n="nav_approach">Abordagem</a>
+                <a href="#contact" class="nav-link hover:text-primary transition-colors" data-i18n="nav_contact">Contato</a>
+                
+                <!-- Language Switcher -->
+                <div class="flex items-center border-l border-slate-200 pl-6 space-x-2" role="group" aria-label="Language selector">
+                    <a href="../index.html" class="lang-btn" aria-label="English" title="English">
+                        <img src="../assets/img/flags/us.png" alt="" class="lang-flag" aria-hidden="true">
+                    </a>
+                    <a href="index.html" class="lang-btn is-active" aria-current="page" aria-label="Português (Brasil)" title="Português (Brasil)">
+                        <img src="../assets/img/flags/br.png" alt="" class="lang-flag" aria-hidden="true">
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="menu-toggle md:hidden text-primary transition-colors" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu-panel">
+                <i data-lucide="menu" class="menu-icon menu-icon-open" aria-hidden="true"></i>
+                <i data-lucide="x" class="menu-icon menu-icon-close" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Flyout -->
+        <div id="mobile-menu" class="mobile-menu md:hidden hidden" aria-hidden="true">
+            <button id="mobile-menu-overlay" class="mobile-menu-overlay" aria-label="Fechar menu"></button>
+            <div id="mobile-menu-panel" class="mobile-menu-panel">
+                <div class="h-full flex flex-col px-7 py-8 bg-white">
+                    <div class="flex items-center justify-between">
+                        <img src="../assets/img/logo-alex-brito.svg" alt="Alex Brito" class="mobile-flyout-logo">
+                        <button id="mobile-menu-close" class="menu-toggle mobile-close-btn" aria-label="Fechar menu">
+                            <i data-lucide="x" class="w-[1.1rem] h-[1.1rem] text-primary" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="mt-6 mb-7 pb-5 border-b border-slate-200 flex items-center space-x-3" role="group" aria-label="Seletor de idioma">
+                            <a href="../index.html" class="lang-btn" aria-label="English" title="English">
+                                <img src="../assets/img/flags/us.png" alt="" class="lang-flag" aria-hidden="true">
+                            </a>
+                            <a href="index.html" class="lang-btn is-active" aria-current="page" aria-label="Português (Brasil)" title="Português (Brasil)">
+                                <img src="../assets/img/flags/br.png" alt="" class="lang-flag" aria-hidden="true">
+                            </a>
+                    </div>
+
+                    <nav class="flex flex-col space-y-5 text-center">
+                        <a href="#home" class="block w-full text-neutral font-semibold hover:text-primary transition-colors text-lg" data-i18n="nav_home">Início</a>
+                        <a href="#about" class="block w-full text-neutral font-semibold hover:text-primary transition-colors text-lg" data-i18n="nav_about">Sobre</a>
+                        <a href="#expertise" class="block w-full text-neutral font-semibold hover:text-primary transition-colors text-lg" data-i18n="nav_expertise">Especialidades</a>
+                        <a href="#approach" class="block w-full text-neutral font-semibold hover:text-primary transition-colors text-lg" data-i18n="nav_approach">Abordagem</a>
+                        <a href="#contact" class="block w-full text-neutral font-semibold hover:text-primary transition-colors text-lg" data-i18n="nav_contact">Contato</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-surface relative overflow-hidden pt-40 pb-24 md:pt-52 md:pb-32 px-6">
+            <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+            <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+            <div class="max-w-5xl mx-auto fade-in relative z-10">
+                <div class="hero-copy">
+                    <p class="hero-eyebrow text-gold font-semibold tracking-[0.2em] uppercase text-xs md:text-sm mb-6" data-i18n="hero_eyebrow">Professor de Filosofia e Tecnologia • Desenvolvedor Web • Palestrante • Consultor</p>
+                    <h1 class="hero-title font-heading font-bold text-primary mb-8" data-i18n="hero_headline">Construindo experiências digitais com lógica, clareza e propósito.</h1>
+                    <p class="hero-support text-lg md:text-xl text-slate-700 leading-relaxed mb-12" data-i18n="hero_support">Sou Alex Brito — Desenvolvedor Web, Professor, Palestrante e Consultor. Crio sites, sistemas e soluções digitais que unem precisão técnica, pensamento crítico e visão de longo prazo.</p>
+                    <div class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
+                        <a href="#expertise" class="btn-main w-full sm:w-auto px-8 py-4 bg-primary text-white font-semibold hover:bg-neutral transition-all duration-300 inline-flex items-center justify-center gap-2.5">
+                            <i data-lucide="briefcase" class="hero-btn-icon" aria-hidden="true"></i>
+                            <span data-i18n="btn_talk">Ver Serviços</span>
+                        </a>
+                        <a href="#contact" class="btn-outline w-full sm:w-auto px-8 py-4 bg-transparent text-primary border border-primary font-semibold hover:bg-primary hover:text-white transition-all duration-300 inline-flex items-center justify-center gap-2.5">
+                            <i data-lucide="mail" class="hero-btn-icon" aria-hidden="true"></i>
+                            <span data-i18n="btn_contact">Contato</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-soft py-24 px-6">
+            <div class="max-w-6xl mx-auto fade-in delay-100">
+                <div class="flex items-center mb-10">
+                    <div class="w-12 h-[2px] bg-gold mr-4"></div>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary" data-i18n="about_title">Sobre Alex Brito</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-[minmax(0,280px)_1fr] lg:grid-cols-[minmax(0,340px)_1fr] gap-10 items-start">
+                    <div class="about-photo-wrap">
+                        <img src="../assets/img/foto-alex-brito-01.svg" alt="Alex Brito portrait" class="about-photo">
+                    </div>
+
+                    <div class="space-y-6 text-lg leading-relaxed text-neutral">
+                        <p data-i18n="about_p1">Alex Brito atua na interseção entre tecnologia, educação e pensamento estratégico. Com mais de 15 anos de experiência em desenvolvimento web, constrói soluções digitais que vão além da aparência e focam em estrutura, performance, clareza e usabilidade real.</p>
+                        <p data-i18n="about_p2">Como Professor de Filosofia e Tecnologia, ele traz uma perspectiva rara ao trabalho digital: execução técnica guiada por reflexão, lógica e profundidade. Essa combinação ajuda a transformar ideias complexas em soluções práticas, elegantes e duradouras.</p>
+                        <p data-i18n="about_p3">Ele também é fundador da INformigados, uma marca digital focada em desenvolvimento web, consultoria técnica, estruturação digital e presença online inteligente.</p>
+
+                        <div class="pt-2">
+                            <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary/80 mb-3">Redes Sociais</p>
+                            <div class="social-links">
+                                <a href="https://github.com/AlexBritoDEV" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub" title="GitHub"><i data-lucide="github" aria-hidden="true"></i></a>
+                                <a href="https://x.com/AlexHPBrito" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X" title="X"><i data-lucide="twitter" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/alexhpbrito/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram" title="Instagram"><i data-lucide="instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/AlexHPBrito/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook" title="Facebook"><i data-lucide="facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.youtube.com/@AlexBrito" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube" title="YouTube"><i data-lucide="youtube" aria-hidden="true"></i></a>
+                                <a href="https://br.pinterest.com/alexhpbrito/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Pinterest" title="Pinterest"><i data-lucide="pin" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/alexhpbrito/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" title="LinkedIn"><i data-lucide="linkedin" aria-hidden="true"></i></a>
+                                <a href="https://profiles.wordpress.org/alexbrito/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WordPress" title="WordPress"><i data-lucide="globe" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="py-24 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16 fade-in delay-100">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4" data-i18n="expertise_title">O Que Eu Faço</h2>
+                    <div class="w-20 h-[2px] bg-gold mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-10 lg:gap-14 items-start">
+                    <div class="service-stack">
+                        <article class="service-item">
+                            <span class="service-number">01</span>
+                            <div>
+                                <h3 class="text-xl font-heading font-bold text-primary mb-2" data-i18n="exp_card1_title">Desenvolvimento Web</h3>
+                                <p class="text-neutral leading-relaxed" data-i18n="exp_card1_text">Sites sob medida, landing pages, sites one-page e sistemas web construídos com foco em performance, responsividade e estrutura limpa.</p>
+                            </div>
+                        </article>
+                        <article class="service-item">
+                            <span class="service-number">02</span>
+                            <div>
+                                <h3 class="text-xl font-heading font-bold text-primary mb-2" data-i18n="exp_card2_title">Soluções em HTML e WordPress</h3>
+                                <p class="text-neutral leading-relaxed" data-i18n="exp_card2_text">De páginas HTML customizadas e altamente otimizadas a projetos baseados em WordPress, sempre com foco em velocidade, usabilidade e facilidade de manutenção.</p>
+                            </div>
+                        </article>
+                        <article class="service-item">
+                            <span class="service-number">03</span>
+                            <div>
+                                <h3 class="text-xl font-heading font-bold text-primary mb-2" data-i18n="exp_card3_title">Consultoria e Estruturação Digital</h3>
+                                <p class="text-neutral leading-relaxed" data-i18n="exp_card3_text">Orientação técnica e estratégica para profissionais, marcas e negócios que buscam mais clareza e melhores decisões digitais.</p>
+                            </div>
+                        </article>
+                        <article class="service-item">
+                            <span class="service-number">04</span>
+                            <div>
+                                <h3 class="text-xl font-heading font-bold text-primary mb-2" data-i18n="exp_card4_title">Palestras e Ensino</h3>
+                                <p class="text-neutral leading-relaxed" data-i18n="exp_card4_text">Palestras, aulas e conteúdo educacional sobre tecnologia, filosofia, pensamento crítico e o uso inteligente de ferramentas digitais.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <aside class="service-aside">
+                        <h3 class="text-2xl font-heading font-bold text-primary mb-4">Como Eu Entrego</h3>
+                        <p class="text-neutral leading-relaxed mb-5">Cada projeto é conduzido em etapas claras, com critérios de qualidade objetivos e visão de longo prazo.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><i data-lucide="check" class="list-icon mr-3 mt-1" aria-hidden="true"></i><span>Diagnóstico estratégico antes das decisões de design</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="list-icon mr-3 mt-1" aria-hidden="true"></i><span>Performance e acessibilidade desde o início</span></li>
+                            <li class="flex items-start"><i data-lucide="check" class="list-icon mr-3 mt-1" aria-hidden="true"></i><span>Arquitetura limpa e entrega fácil de manter</span></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach Section -->
+        <section id="approach" class="py-24 bg-gradient-to-br from-primary via-[#001f4d] to-[#000f2b] text-white px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center mb-10">
+                    <div class="w-12 h-[2px] bg-gold mr-4"></div>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-white" data-i18n="approach_title">Minha Abordagem</h2>
+                </div>
+
+                <div class="text-lg text-gray-200 leading-relaxed mb-8">
+                    <p data-i18n="approach_p1">Não acredito em soluções digitais criadas apenas para parecerem boas por um momento. Um bom trabalho deve ser lógico, útil, acessível, rápido e sustentável ao longo do tempo.</p>
+                </div>
+
+                <div class="mb-8">
+                    <p class="text-lg font-semibold text-white mb-4" data-i18n="approach_p2">Minha abordagem combina:</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i data-lucide="circle-dot" class="list-icon mr-3" aria-hidden="true"></i> <span data-i18n="approach_li1">rigor técnico</span></li>
+                        <li class="flex items-center"><i data-lucide="circle-dot" class="list-icon mr-3" aria-hidden="true"></i> <span data-i18n="approach_li2">pensamento crítico</span></li>
+                        <li class="flex items-center"><i data-lucide="circle-dot" class="list-icon mr-3" aria-hidden="true"></i> <span data-i18n="approach_li3">desenvolvimento focado em performance</span></li>
+                        <li class="flex items-center"><i data-lucide="circle-dot" class="list-icon mr-3" aria-hidden="true"></i> <span data-i18n="approach_li4">comunicação clara</span></li>
+                        <li class="flex items-center"><i data-lucide="circle-dot" class="list-icon mr-3" aria-hidden="true"></i> <span data-i18n="approach_li5">simplicidade estratégica</span></li>
+                    </ul>
+                </div>
+
+                <p class="text-xl font-heading italic text-gold" data-i18n="approach_conclusion">Não se trata de criar ruído. Trata-se de construir com intenção.</p>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="section-soft py-24 px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4" data-i18n="highlights_title">Destaques Profissionais</h2>
+                <div class="w-20 h-[2px] bg-gold mx-auto mb-12"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left">
+                    <div class="flex items-start">
+                        <i data-lucide="check" class="list-icon mr-3 mt-1" aria-hidden="true"></i>
+                        <p class="text-neutral" data-i18n="high_li1">Mais de 15 anos de experiência em desenvolvimento web</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-lucide="check" class="list-icon mr-3 mt-1" aria-hidden="true"></i>
+                        <p class="text-neutral" data-i18n="high_li2">Fundador da INformigados</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-lucide="check" class="list-icon mr-3 mt-1" aria-hidden="true"></i>
+                        <p class="text-neutral" data-i18n="high_li3">Professor de Filosofia e Tecnologia</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-lucide="check" class="list-icon mr-3 mt-1" aria-hidden="true"></i>
+                        <p class="text-neutral" data-i18n="high_li4">Experiência com sites, sistemas, consultoria e projetos digitais</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-lucide="check" class="list-icon mr-3 mt-1" aria-hidden="true"></i>
+                        <p class="text-neutral" data-i18n="high_li5">Foco em performance, estrutura e qualidade de longo prazo</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-lucide="check" class="list-icon mr-3 mt-1" aria-hidden="true"></i>
+                        <p class="text-neutral" data-i18n="high_li6">Combina execução técnica com pensamento analítico</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6 border-t border-gray-100">
+            <div class="max-w-3xl mx-auto text-center cta-card px-8 md:px-12 py-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-6" data-i18n="contact_title">Vamos Conversar</h2>
+                <div class="w-20 h-[2px] bg-gold mx-auto mb-8"></div>
+                
+                <p class="text-lg text-neutral mb-12" data-i18n="contact_text">Se você procura alguém que saiba pensar, estruturar e construir com clareza, ficarei feliz em ouvir você.</p>
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
+                    <a href="https://wa.me/5535991384028" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#0B5D53] text-white font-semibold rounded-full hover:bg-[#08463f] transition-colors w-full md:w-auto shadow-md">
+                        <i data-lucide="message-circle" class="w-6 h-6" aria-hidden="true"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    
+                    <a href="mailto:contato@alexhpbrito.com.br" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-primary border border-primary/30 font-semibold rounded-full hover:bg-slate-50 transition-colors w-full md:w-auto shadow-sm">
+                        <i data-lucide="mail" class="w-6 h-6" aria-hidden="true"></i>
+                        <span>E-mail</span>
+                    </a>
+                </div>
+
+                <p class="text-sm font-semibold text-neutral/70" data-i18n="contact_optional">Estou aberto a projetos relevantes, colaborações, consultorias e oportunidades de palestras.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-[#0D1D3D] via-[#162C58] to-[#1F396A] text-white py-8 text-center px-6">
+        <p class="text-sm text-gray-300 max-w-xl mx-auto" data-i18n="footer_text">Alex Brito — Professor de Filosofia e Tecnologia, Desenvolvedor Web, Palestrante e Consultor.</p>
+    </footer>
+
+    <!-- Minimal Vanilla JS -->
+    <script>
+        // 1. Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const menuOverlay = document.getElementById('mobile-menu-overlay');
+        const menuCloseBtn = document.getElementById('mobile-menu-close');
+        const links = menu.querySelectorAll('a');
+        let mobileMenuHideTimer;
+
+        function openMobileMenu() {
+            clearTimeout(mobileMenuHideTimer);
+            menu.classList.remove('hidden');
+            requestAnimationFrame(() => {
+                menu.classList.add('is-open');
+            });
+            btn.classList.add('is-open');
+            btn.setAttribute('aria-expanded', 'true');
+            btn.setAttribute('aria-label', 'Fechar menu');
+            menu.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('overflow-hidden');
+            document.body.classList.add('menu-open');
+        }
+
+        function closeMobileMenu() {
+            menu.classList.remove('is-open');
+            btn.classList.remove('is-open');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.setAttribute('aria-label', 'Abrir menu');
+            menu.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('overflow-hidden');
+            document.body.classList.remove('menu-open');
+            mobileMenuHideTimer = setTimeout(() => {
+                menu.classList.add('hidden');
+            }, 300);
+        }
+
+        function toggleMobileMenu() {
+            if (menu.classList.contains('is-open')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        }
+
+        btn.addEventListener('click', toggleMobileMenu);
+        menuOverlay.addEventListener('click', closeMobileMenu);
+        if (menuCloseBtn) {
+            menuCloseBtn.addEventListener('click', closeMobileMenu);
+        }
+
+        links.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && menu.classList.contains('is-open')) {
+                closeMobileMenu();
+            }
+        });
+
+        if (window.lucide) {
+            window.lucide.createIcons();
+        }
+    </script>
+</body>
+</html>

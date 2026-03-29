@@ -1,0 +1,16 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local test and audit artifacts
+lighthouse-report.json
+lighthouse-report-*.json
+w3c-validator-report.json
+w3c-validator-report-*.json
+
+# Local TLS / temp files (if generated)
+*.pem
+*.key
+*.tmp

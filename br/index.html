@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            var path = window.location.pathname;
+            if (path.endsWith("/index.html")) {
+                var cleanPath = path.slice(0, -("index.html".length));
+                window.location.replace(cleanPath + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
     <title>Alex Brito | Desenvolvedor Web, Professor, Palestrante e Consultor</title>
     <meta name="description" content="Alex Brito é um Desenvolvedor Web brasileiro, Professor de Filosofia e Tecnologia, Palestrante e Consultor focado em soluções digitais lógicas, de alta performance e bem estruturadas.">
     <meta name="author" content="Alex Brito">
@@ -562,7 +571,7 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
             <!-- Logo / Name -->
             <a href="#home" class="inline-flex items-center" aria-label="Alex Brito Home">
-                <img src="../assets/img/logo-alex-brito.svg" alt="Alex Brito" class="h-10 md:h-11 w-auto">
+                <img src="../assets/img/logo-alex-brito.svg" alt="Alex Brito" class="h-10 md:h-11 w-auto" width="1008" height="192" fetchpriority="high" loading="eager" decoding="async">
             </a>
 
             <!-- Desktop Nav -->
@@ -575,10 +584,10 @@
                 
                 <!-- Language Switcher -->
                 <div class="flex items-center border-l border-slate-200 pl-6 space-x-2" role="group" aria-label="Language selector">
-                    <a href="../index.html" class="lang-btn" aria-label="English" title="English">
+                    <a href="../" class="lang-btn" aria-label="English" title="English">
                         <img src="../assets/img/flags/us.png" alt="" class="lang-flag" aria-hidden="true">
                     </a>
-                    <a href="index.html" class="lang-btn is-active" aria-current="page" aria-label="Português (Brasil)" title="Português (Brasil)">
+                    <a href="./" class="lang-btn is-active" aria-current="page" aria-label="Português (Brasil)" title="Português (Brasil)">
                         <img src="../assets/img/flags/br.png" alt="" class="lang-flag" aria-hidden="true">
                     </a>
                 </div>
@@ -597,17 +606,17 @@
             <div id="mobile-menu-panel" class="mobile-menu-panel">
                 <div class="h-full flex flex-col px-7 py-8 bg-white">
                     <div class="flex items-center justify-between">
-                        <img src="../assets/img/logo-alex-brito.svg" alt="Alex Brito" class="mobile-flyout-logo">
+                        <img src="../assets/img/logo-alex-brito.svg" alt="Alex Brito" class="mobile-flyout-logo" width="1008" height="192" loading="eager" decoding="async">
                         <button id="mobile-menu-close" class="menu-toggle mobile-close-btn" aria-label="Fechar menu">
                             <i data-lucide="x" class="w-[1.1rem] h-[1.1rem] text-primary" aria-hidden="true"></i>
                         </button>
                     </div>
 
                     <div class="mt-6 mb-7 pb-5 border-b border-slate-200 flex items-center space-x-3" role="group" aria-label="Seletor de idioma">
-                            <a href="../index.html" class="lang-btn" aria-label="English" title="English">
+                            <a href="../" class="lang-btn" aria-label="English" title="English">
                                 <img src="../assets/img/flags/us.png" alt="" class="lang-flag" aria-hidden="true">
                             </a>
-                            <a href="index.html" class="lang-btn is-active" aria-current="page" aria-label="Português (Brasil)" title="Português (Brasil)">
+                            <a href="./" class="lang-btn is-active" aria-current="page" aria-label="Português (Brasil)" title="Português (Brasil)">
                                 <img src="../assets/img/flags/br.png" alt="" class="lang-flag" aria-hidden="true">
                             </a>
                     </div>
@@ -660,7 +669,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-[minmax(0,280px)_1fr] lg:grid-cols-[minmax(0,340px)_1fr] gap-10 items-start">
                     <div class="about-photo-wrap">
-                        <img src="../assets/img/foto-alex-brito-01.svg" alt="Alex Brito portrait" class="about-photo">
+                        <img src="../assets/img/foto-alex-brito-01.svg" alt="Alex Brito portrait" class="about-photo" width="300" height="375" loading="lazy" decoding="async">
                     </div>
 
                     <div class="space-y-6 text-lg leading-relaxed text-neutral">

@@ -2,6 +2,11 @@
 
 🌐 A bilingual (EN/PT-BR) premium landing page focused on institutional presence, performance, and visual clarity.
 
+[![GitHub Pages](docs/assets/github-pages.svg)](https://pages.github.com/)
+[![HTML5](docs/assets/html5.svg)](index.html)
+
+[View the site](https://alexbritodev.github.io/)
+
 ## ✨ Overview
 
 This project was created to represent **Alex Brito's personal brand** with an elegant, objective, and fully responsive experience across **desktop, tablet, and mobile**.
